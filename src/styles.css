@@ -1,0 +1,14 @@
+/* Louvado seja o Senhor */
+
+:root{
+    --primary-color: #FFF;
+    --secondary-color: #C0C0C0;
+    --tertiary-color: #002b98;
+    --highlight-color: #22d4fd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+

@@ -1,0 +1,33 @@
+/* Louvado seja o Senhor */
+
+.main{
+    height: 100vh;
+    display: flex;
+}
+
+.img-section{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.car-img{
+    width: 100%;
+    opacity: 50%;
+}
+
+.info-section{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--tertiary-color);
+    border-left: 3px solid var(--secondary-color);
+}
+
+.ford-logo{
+    width: 25%;
+}
+
