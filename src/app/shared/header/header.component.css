@@ -1,0 +1,19 @@
+/* Louvado seja o Senhor */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: var(--tertiary-color);
+}
+
+.navbar button{
+    background-color: transparent;
+    border: none;
+}
+
+.navbar .ph{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}

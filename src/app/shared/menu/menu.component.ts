@@ -1,6 +1,6 @@
 // Louvado seja o Senhor
 
-import { Component } from '@angular/core';
+import { afterRender, Component, ElementRef, model, viewChild } from '@angular/core';
 
 @Component({
   selector: 'sprAng-menu',
@@ -9,5 +9,21 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
+  menu = viewChild.required<ElementRef<HTMLDialogElement>>('menu');
+  isOpen = model(false);
 
+  closeMenu(){
+    this.isOpen.set(false);
+  }
+
+  constructor(){
+    afterRender(() => {
+      if(this.isOpen()){
+        this.menu().nativeElement.showModal();
+      }
+      else{
+        this.menu().nativeElement.close();
+      }
+    });
+  }
 }

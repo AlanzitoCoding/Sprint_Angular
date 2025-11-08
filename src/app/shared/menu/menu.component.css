@@ -1,1 +1,42 @@
 /* Louvado seja o Senhor */
+
+.menu-dialog{
+    height: 100vh;
+    width: 15rem;
+}
+
+.menu-field{
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+
+.menu-img-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.ford-logo{
+    width: 7rem;
+}
+
+.ph-x{
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.menu-list-item{
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+.menu-list-item a{
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-list-item:hover{
+    background-color: var(--secondary-color);
+}
