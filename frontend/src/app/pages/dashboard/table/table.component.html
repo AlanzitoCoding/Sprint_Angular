@@ -1,0 +1,25 @@
+<!-- Louvado seja o Senhor -->
+
+<table>
+    <thead>
+        <tr>
+            <th>Código Vin</th>
+            <th>Odômetro</th>
+            <th>Nível de Combustível</th>
+            <th>Status</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="input-td"><input #carCode type="text" (change)="showCarInfoViaVin()"></td>
+            <td #odometro></td>
+            <td #nivelComb></td>
+            <td #status></td>
+            <td #lat></td>
+            <td #long></td>
+        </tr>
+    </tbody>
+</table>

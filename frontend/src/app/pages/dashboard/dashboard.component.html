@@ -18,8 +18,10 @@
                 </h1>
     
                 <div class="card-info">
-                    <select name="" id="">
-                        
+                    <select class="car-select" name="car-select" #carSelect (change)="showCarInfo()">
+                       @for(vehicle of vehicles; track vehicle.id){
+                            <option value="{{ vehicle.id }}">{{ vehicle.vehicle }}</option>
+                        }
                     </select>
                 </div>
             </sprAng-car-data-card>
@@ -30,29 +32,40 @@
                 </h1>
     
                 <div class="card-info">
-                    <p>fala mn</p>
+                    <h2 #carSellInfo></h2>
+                    <p>Unids.</p>
                 </div>
             </sprAng-car-data-card>
-    
+            
             <sprAng-car-data-card class="car-card">
                 <h1 card-title class="card-title">
                     Conectados
                 </h1>
-    
+                
                 <div class="card-info">
-                    <p>fala mn</p>
+                    <h2 #carConnInfo></h2>
+                    <p>Unids.</p>
                 </div>
             </sprAng-car-data-card>
-    
+            
             <sprAng-car-data-card class="car-card">
                 <h1 card-title class="card-title">
-                    Update Software
+                    Software Update
                 </h1>
-    
+                
                 <div class="card-info">
-                    <p>fala mn</p>
+                    <h2 #carSoftUpdInfo></h2>
+                    <p>Unids.</p>
                 </div>
             </sprAng-car-data-card>
+        </div>
+
+        <div class="car-img-div">
+            <img alt="" #carImg>
+        </div>
+
+        <div  class="table-div">
+            <sprAng-table/>
         </div>
     </main>
 </body>

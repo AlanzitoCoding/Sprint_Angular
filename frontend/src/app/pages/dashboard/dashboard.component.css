@@ -10,3 +10,29 @@
     font-size: 1.5rem;
     padding: 0.5rem 0;
 }
+
+.car-select{
+    padding: 0.5rem;
+}
+
+.card-info h2{
+    color: var(--highlight-color);
+    font-size: 2rem;
+}
+
+.car-img-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.car-img-div img{
+    width: 50%;
+}
+
+.table-div{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
