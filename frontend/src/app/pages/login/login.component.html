@@ -17,22 +17,22 @@
 
             <div class="input-div">
                 <h1 class="div-title">Welcome!</h1>
-                <form class="login-inputs-div" type="submit">
+                <form class="login-inputs-div" id="loginForm" (submit)="login($event)">
                     <label for="emailInp" class="input-label">
                         <i class="ph ph-user"></i>
-                        <input class="login-input" type="email" name="emailInp" placeholder="E-mail" id="">
+                        <input #usernameInput class="login-input" type="text" name="emailInp" placeholder="Username" id="emailInput" required>
                         <i class="ph ph-info"></i>
                     </label>
                     
                     <label for="passwordInp" class="input-label">
                         <i class="ph ph-password"></i>
-                        <input class="login-input" type="password" name="passwordInp" placeholder="Senha" id="">
-                        <i class="ph ph-info"></i>
+                        <input #passwordInput class="login-input" type="password" name="passwordInp" placeholder="Senha" id="passwordInput" required>
+                        <i #passwordIcon class="ph ph-eye" (click)="changePasswordVisibility()"></i>
                     </label>
 
                     <sprAng-round-switch-button class="switch"/>
                     
-                    <button class="login-button">Log-in</button>
+                    <button class="login-button" type="submit">Log-in</button>
                 </form>
             </div>
         </section>   

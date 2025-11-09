@@ -7,6 +7,7 @@ import { map, Observable } from 'rxjs';
 import { response } from 'express';
 import { Data } from '@angular/router';
 import { CarByVin } from '../models/car-by-vin.model';
+import { Usuario } from '../models/usuario.model';
 
 @Injectable({
   providedIn: 'root'
@@ -21,5 +22,9 @@ export class ApiService {
 
   public checkVinCode(code : string) : Observable<CarByVin>{
     return this.http.post<CarByVin>(`${this.apiURL}/vehicleData`, { vin: code });
+  }
+
+  public login(email : string, password : string) : Observable<Usuario>{
+    return this.http.post<Usuario>(`${this.apiURL}/login`, { nome: email, senha: password });
   }
 }

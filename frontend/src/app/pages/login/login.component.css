@@ -71,7 +71,7 @@
     border-radius: 0 7px 7px 0;
 }
 
-.ph-info{
+.ph-info, .ph-eye, .ph-eye-slash{
     cursor: pointer;
 }
 
