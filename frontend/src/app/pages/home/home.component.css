@@ -1,0 +1,16 @@
+/* Louvado seja o Senhor */
+
+body{
+    height: 90vh;
+}
+
+.main{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../../public/img/ranger.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

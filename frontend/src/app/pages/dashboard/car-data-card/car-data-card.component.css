@@ -1,0 +1,23 @@
+/* Louvado seja o Senhor */
+
+.body{
+    width: 15rem;
+    height: 15rem;
+    border: 2px solid var(--secondary-color);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.main{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

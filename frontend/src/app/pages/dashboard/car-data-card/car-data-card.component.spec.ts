@@ -1,18 +1,20 @@
+// Louvado seja o Senhor
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderComponent } from './header.component';
+import { CarDataCardComponent } from './car-data-card.component';
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
+describe('CarDataCardComponent', () => {
+  let component: CarDataCardComponent;
+  let fixture: ComponentFixture<CarDataCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeaderComponent]
+      imports: [CarDataCardComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HeaderComponent);
+    fixture = TestBed.createComponent(CarDataCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
