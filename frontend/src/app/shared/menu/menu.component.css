@@ -16,10 +16,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
 .ford-logo{
-    width: 7rem;
+    width: 6.5rem;
 }
 
 .ph-x{
@@ -27,13 +29,13 @@
     cursor: pointer;
 }
 
+.menu-list a{
+    text-decoration: none;
+}
+
 .menu-list-item{
     list-style-type: none;
     padding: 0.5rem;
-}
-
-.menu-list-item a{
-    text-decoration: none;
     color: #000;
 }
 
