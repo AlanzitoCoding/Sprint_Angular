@@ -1,6 +1,6 @@
 // Louvado seja o Senhor
 
-import { Component } from '@angular/core';
+import { Component, afterRender } from '@angular/core';
 import { HeaderComponent } from '../../shared/header/header.component';
 import { CardComponent } from "./card/card.component";
 
@@ -11,5 +11,11 @@ import { CardComponent } from "./card/card.component";
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  user = sessionStorage.getItem('user');
 
+  constructor(){
+    afterRender(() => {
+      console.log(`Usuário Loggado (registro na Home): ${this.user}`);
+    })
+  }
 }

@@ -4,8 +4,6 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Veiculos, VeiculosAPI } from '../models/veiculo.model';
 import { map, Observable } from 'rxjs';
-import { response } from 'express';
-import { Data } from '@angular/router';
 import { CarByVin } from '../models/car-by-vin.model';
 import { Usuario } from '../models/usuario.model';
 

@@ -34,11 +34,12 @@ export class LoginComponent {
     event.preventDefault()
     const email : string = this.usernameInput().nativeElement.value;
     const password : string = this.passwordInput().nativeElement.value;
-
+    
     this.apiService.login(email, password).subscribe({
       next: (res) => {
-        console.log('Login OK, redirecionando...');
-        this.router.navigate(['/home']).then(success => console.log('👉 Navegação:', success));
+        sessionStorage.setItem('user', JSON.stringify(res));
+        let user = sessionStorage.getItem('user');
+        this.router.navigate(['/home']).then(success => console.log(`Usuário loggado: ${user}, \n${success}`));
       },
       error: (err) => {
         console.error('Erro no login', err);
