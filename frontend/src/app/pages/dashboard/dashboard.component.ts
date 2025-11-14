@@ -31,6 +31,10 @@ export class DashboardComponent {
     .subscribe();
   }
   
+  checkLogin(){
+    // if()
+  }
+
   showCarInfo(){
     const carID : number = Number(this.carSelect().nativeElement.value);
 

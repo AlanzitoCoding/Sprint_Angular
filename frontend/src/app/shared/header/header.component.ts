@@ -12,7 +12,6 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   private readonly router = inject(Router);
-
   menuAberto = signal(false);
 
   openMenu(){
@@ -21,5 +20,6 @@ export class HeaderComponent {
 
   logout(){
     this.router.navigate(['/login']);
+    sessionStorage.removeItem("user")
   }
 }

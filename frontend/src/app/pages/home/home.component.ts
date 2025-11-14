@@ -1,8 +1,9 @@
 // Louvado seja o Senhor
 
-import { Component, afterRender } from '@angular/core';
+import { Component, afterRender, inject } from '@angular/core';
 import { HeaderComponent } from '../../shared/header/header.component';
 import { CardComponent } from "./card/card.component";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'sprAng-home',
